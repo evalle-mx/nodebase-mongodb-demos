@@ -4,7 +4,7 @@ Application using the basic modular paradigm for Data interaction (CRUD) between
 
 ### modules (AKA packages/libraries)
 
-(by running `npm list`)
+This project was uploaded using the following modules and version (you can check via running `npm list`)
 - dotenv@16.4.5
 - express@4.21.1
 - mongodb@6.10.0
