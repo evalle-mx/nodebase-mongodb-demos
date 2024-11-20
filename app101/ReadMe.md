@@ -5,10 +5,10 @@ Application using the basic modular paradigm for Data interaction (CRUD) between
 ### modules (AKA packages/libraries)
 
 (by running `npm list`)
-├── dotenv@16.4.5
-├── express@4.21.1
-├── mongodb@6.10.0
-└── nodemon@3.1.7
+- dotenv@16.4.5
+- express@4.21.1
+- mongodb@6.10.0
+- nodemon@3.1.7
 
 ### Steps required to run this Project
 
