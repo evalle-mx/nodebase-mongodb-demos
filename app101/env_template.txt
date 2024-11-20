@@ -1,0 +1,6 @@
+#Demo Message for testing purposes
+MESSAGE="Hello World"
+#Port where the application will be listen, 3000 is the standard
+PORT=3000
+#Connection String to connect the instance (for Atlas clusters: Clusters dashboard > Connect button > Drivers )
+MONGO_URI="mongodb+srv://<USERNAME>:<PASSWORD>@<CLUSTER.NAME>.mongodb.net/?retryWrites=true&w=majority"
