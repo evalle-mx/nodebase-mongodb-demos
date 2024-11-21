@@ -1,0 +1,7 @@
+#obtain these value from DataAccess and Connection String
+username=<USERNAME>
+password=<PASSWORD>
+cluster=<CLUSTER_DNS_NAME>
+# Database and Collection from Sample Dataset
+database=sample_training
+collName=listingsAndReviews
