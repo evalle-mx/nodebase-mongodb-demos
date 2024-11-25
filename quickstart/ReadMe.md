@@ -1,6 +1,6 @@
 # quickStart
 
-Standalone scripts that perform certain basic tasks. These are derived from the Intercom Article [Connect to your data with Node.js / Javascript](https://app.intercom.com/a/apps/qq7v0gqb/knowledge-hub/article/8182071) and [CRUD Operations in Node.js](https://www.mongodb.com/developer/languages/javascript/node-crud-tutorial/) tutorial on the MongoDB YouTube channel, created by Lauren Schaefer.
+Standalone script that perform certain basic tasks. These are derived from the Intercom Article [Connect to your data with Node.js / Javascript](https://app.intercom.com/a/apps/qq7v0gqb/knowledge-hub/article/8182071) and [CRUD Operations in Node.js](https://www.mongodb.com/developer/languages/javascript/node-crud-tutorial/) tutorial on the MongoDB YouTube channel, created by Lauren Schaefer.
 
 original scripts are located on _mongodb-developer_/[nodejs-quickstart](https://github.com/mongodb-developer/nodejs-quickstart)
 
@@ -20,7 +20,7 @@ Tested on Node v23.1.0
 - create a new file ".env" (dot env) and add the required data. (Check or rename attached _env_ file)
 - Run `node <fileName>.js` on terminal
 
-> **⚠️ Important:** Make sure to READ the comments on the code before running the script.
+> **⚠️ Important:** Make sure to READ the usage and consequences via the code comments before running the script.
 
 #### Expected File System:
 
