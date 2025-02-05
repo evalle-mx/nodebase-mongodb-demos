@@ -1,5 +1,5 @@
 const uri =
-  "mongodb+srv://<USERNAME>:<PASSWORD>@<CLUSTER>NAME>mongodb.net?retryWrites=true&w=majority";
+  "mongodb+srv://<username>:<password>@<cluster.dnsname>.mongodb.net?retryWrites=true&w=majority";
 
 /* //// Node.js Version 12
 const { MongoClient } = require("mongodb");
