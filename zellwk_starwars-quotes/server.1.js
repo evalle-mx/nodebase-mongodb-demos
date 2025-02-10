@@ -22,7 +22,6 @@ MongoClient.connect(connectionString)
     );
     db = client.db(dbName);
     quotesCollection = db.collection(collName);
-
     console.log(`Open new Browser window at http://localhost:${PORT}/`);
   })
   .catch((error) => {
@@ -34,15 +33,7 @@ MongoClient.connect(connectionString)
 
 // middleware to handle reading data from the <form> element (body null)
 app.use(express.urlencoded({ extended: true }));
-// Middleware to use Embedded JavaScript (EJS)[http://www.embeddedjs.com/]
-/* >>> Need to run in folder, otherwise: Failed to lookup view "index.ejs" in views directory   */
-app.set("view engine", "ejs");
-// make 'public' folder (and content) accessible by using built-in middleware
-app.use(express.static("public"));
 
-app.use(express.json());
-
-// ROUTES
 app.get("/", (req, res) => {
   console.log("Entering Root...");
   //res.send("<h1>Welcome to home</h1>");
@@ -53,10 +44,10 @@ app.get("/", (req, res) => {
     .toArray()
     .then((results) => {
       console.log(results);
-      res.render("index.ejs", { quotes: results });
     })
     .catch((error) => console.error(error));
-  //   res.sendFile(__dirname + "/index.html"); // Note: __dirname is the current directory
+
+  res.sendFile(__dirname + "/index.html"); // Note: __dirname is the current directory
 });
 
 app.post("/quotes", (req, res) => {
@@ -70,45 +61,6 @@ app.post("/quotes", (req, res) => {
     .then((result) => {
       console.log(result);
       res.redirect("/");
-    })
-    .catch((error) => console.error(error));
-});
-
-app.put("/quotes", (req, res) => {
-  console.log("body: ", req.body);
-
-  quotesCollection
-    .findOneAndUpdate(
-      { name: "yoda" }, //searchs for docs where name=='yoda'
-
-      {
-        $set: {
-          //replaces Fields with incomming values
-          name: req.body.name,
-          quote: req.body.quote,
-        },
-      },
-      {
-        upsert: true, //updates or inserts if does not exists
-      }
-    )
-    .then((result) => {
-      console.log(result);
-      res.json("Success");
-    })
-    .catch((error) => console.error(error));
-});
-
-app.delete("/quotes", (req, res) => {
-  // Handle delete event here
-  let qName = req.body.name;
-  quotesCollection
-    .deleteOne({ name: qName })
-    .then((result) => {
-      if (result.deletedCount === 0) {
-        return res.json("No more quote to delete");
-      }
-      res.json(`Deleted ${qName}'s quote`);
     })
     .catch((error) => console.error(error));
 });
