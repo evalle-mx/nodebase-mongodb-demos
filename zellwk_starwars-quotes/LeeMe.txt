@@ -1,0 +1,28 @@
+##########################################################################################
+##  Building a Simple CRUD app with Node, Express, and MongoDB
+##  https://zellwk.com/blog/crud-express-mongodb/
+##  
+##  * MongoClient, Express, EJS (HTML-render), fetch
+###########################################################################################
+
+$ npm init -y
+$ touch server.js
+$ npm install express --save
+$ npm i --save-dev nodemon
+$ npm i dotenv
+
+$ npm install body-parser --save
+$ npm install mongodb --save
+
+
+
+$ npm install ejs --save
+
+
+
+
+
+####  RUN #########
+nodemon server.js   or    npm run deploy
+
+> http://localhost:3000/ 
