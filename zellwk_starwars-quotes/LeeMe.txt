@@ -5,8 +5,15 @@
 ##  * MongoClient, Express, EJS (HTML-render), fetch
 ###########################################################################################
 
+light application with no external dependence, that creates a small Web page to List, Add, 
+Update and Remove quotes (CRUD).
+
+- Uses Fetch to get data from itself
+- Connects to MongoDB databases
+
+
 $ npm init -y
-$ touch server.js
+$ touch server.jss
 $ npm install express --save
 $ npm i --save-dev nodemon
 $ npm i dotenv
@@ -23,6 +30,7 @@ $ npm install ejs --save
 
 
 ####  RUN #########
-nodemon server.js   or    npm run deploy
+cd zellwk_starwars-quotes
+nodemon server.js 
 
 > http://localhost:3000/ 
