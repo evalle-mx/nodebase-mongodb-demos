@@ -1,8 +1,8 @@
-# quickStart
+# quickStart mongocrud
 
 Standalone script that perform certain basic tasks. These are derived from the Intercom Article [Connect to your data with Node.js / Javascript](https://app.intercom.com/a/apps/qq7v0gqb/knowledge-hub/article/8182071) and [CRUD Operations in Node.js](https://www.mongodb.com/developer/languages/javascript/node-crud-tutorial/) tutorial on the MongoDB YouTube channel, created by Lauren Schaefer.
 
-original scripts are located on _mongodb-developer_/[nodejs-quickstart](https://github.com/mongodb-developer/nodejs-quickstart)
+original scripts are located on _mongodb-developer_/[nodejs-quickstart](https://github.com/mongodb-developer/nodejs-quickstart) and Youtube TUtorial [mongocrud](https://www.mongodb.com/blog/post/quick-start-nodejs-mongodb-how-to-get-connected-to-your-database)
 
 ### modules (AKA packages/libraries)
 
